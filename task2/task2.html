@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #dedede;
+		}
+		.top1{
+			width: 100%;
+			height: 50px;
+			background: gray;
+		}
+		.top1 >.topList{
+			width: 30%;
+			height: 50px;
+			position: absolute;
+			left: 70%;
+			top: 0%;
+			font-size:0;
+		}
+		.top1 >.topList>li{
+			width: 23%;
+			height: 50px;
+			display: inline-block;
+			color: black;
+			text-align: center;
+			line-height: 50px;
+		}
+		.top1 >.topList>li:hover{
+			background: #4f4f6b;
+		}
+		.top1 >.topList > li>a{
+			text-decoration:none;
+			font-size:16px;	
+		}
+		.section1{
+			margin: 20px;
+			padding: 20px;
+			background: white;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.section1 span{
+			font-size:10px;
+			color: gray;
+		}
+		.section1 p{
+			text-indent: 2em;
+		}
+		.section2{
+			margin: 20px;
+			padding: 20px;
+			background: white;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.section2 img{
+			width: 50%;
+			height: 50%;
+		}
+		.section3{
+			margin: 20px;
+			padding: 20px;
+			background: white;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.section3 table{
+			border-collapse: collapse;
+			width: 70%;
+		}
+		.section3  table  th{
+			background: black;
+			text-align: left;f
+			color:white;
+		}
+	/* 	tbody{
+		    display: table-row-group;
+	    			vertical-align: middle;
+	} */
+		.section4{
+			margin: 20px;
+			padding: 20px;
+			background: white;
+			box-shadow: 10px 10px 5px #888888;
+		}
+		.section4 p{
+			font-size: 10px;
+			color: gray;
+		}
+		.section4 form{
+			display: block;
+		}
+		.section4 >.form1{
+			margin-left: 30%;
+		}
+	</style>
+</head>
+<body>
+<!--网页头部，H5使用header加nav头部-->
+	<div class="top1">
+		<h1>网站一级标题</h1>
+		<img src="">
+		<ul class="topList">
+			<li><a href="#">链接1</a></li>
+			<li><a href="#">链接2</a></li>
+			<li><a href="#">链接3</a></li>
+			<li><a href="#">链接4</a></li>
+		</ul>
+	</div>
+	<div class="section1">
+		<h2>文章二级标题</h2>
+		<h3>文章三级标题</h3>
+		<span>文章作者</span> <span>文章发布时间</span>
+		<p>这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落 这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落&nbsp换行了<br>这是一个很长的段落这是一个很长的段落这是一个很长的段落 <b>这是一个粗体</b>这是一个很长的段落这是一个很长的段落<a href="#">这是一个链接</a>这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落</p>
+		<img width="50%" height="50%" src="img1.jpg">
+	</div>
+	<div class="section2">
+		<ul>
+			<li>列表1</li>
+			<li>列表2</li>
+			<li>列表3</li>
+		</ul>
+		<h2>图片</h2>
+		<ul style="list-style-type: none">
+			<li>好看的图片<br><img src="img1.jpg"></li>
+			<li>好看的图片<br><img src="img1.jpg"></li>
+			<li>好看的图片<br><img src="img1.jpg"></li>
+		</ul>
+	</div>
+	<div class="section3">
+		<h1>最后一篇文章一级标题</h1>
+		<h2>二级表题</h2>
+		<p>文章作者&nbsp发布时间</p>
+		<ul style="list-style-type: none">
+			<li>1.排名1</li>
+			<li>2.排名2</li>
+			<li>3.排名3</li>
+		</ul>
+		<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+		<table border="1px ">
+			<tbody>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内单元格</td>
+					<td>表内单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内单元格</td>
+					<td>表内单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内单元格</td>
+					<td>表内单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内单元格</td>
+					<td>表内单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="section4">
+		<h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+		<h3>侧栏注册窗口标题</h3>
+		<form class="form1">
+			<label>请输入邮箱地址:</label>
+			<input type="text" name="" value="这里输入邮箱">
+			<p>邮箱地址请按要求格式输入</p>
+		       请输入密码：<input type="text" value="这是一个文本输入框">
+		       请重复输入密码：<input type="password" value="这是一个文本输入框">
+		       <p>密码请为6-16位英文数字</p>
+		</form>
+		<form class="fomr2"> 
+		<!-->同一组中name值一致才能起到单选作用<-->
+		性别：<input type="radio" name="sex">男
+			<input type="radio" name="sex">女
+		</form>
+		<form class="form3">
+			城市:<select>
+				<option value="北京">北京</option>
+				<option value="成都">成都</option>
+				<option value="深圳">深圳</option>
+			</select>
+		</form>
+		<form class="form4">
+			爱好：<input type="checkbox" name="">运动
+			<input type="checkbox" name="">艺术
+			<input type="checkbox" name="">科学
+		</form>
+		<form class="form5">
+			个人描述：<textarea>这是一个多行输入框</textarea>
+		</form>
+		<button>确认提交</button>
+	</form>
+	<p>版权所有&copy</p>
+	</div>
+	</body>
+</html>
